@@ -41,13 +41,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v140_clang_c2</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v140_clang_c2</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -103,6 +103,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>-std=c++1z %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +138,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>-std=c++1z %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,6 +148,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bell\Easing\Easing.hpp" />
+    <ClInclude Include="Bell\Easing\InOutCubic.hpp" />
+    <ClInclude Include="Bell\Easing\InOutQuadratic.hpp" />
+    <ClInclude Include="Bell\Easing\Linear.hpp" />
+    <ClInclude Include="Bell\Easing\InQuadratic.hpp" />
+    <ClInclude Include="Bell\Easing\OutCubic.hpp" />
+    <ClInclude Include="Bell\Easing\OutQuadratic.hpp" />
+    <ClInclude Include="Bell\Easing\InQuartic.hpp" />
+    <ClInclude Include="Bell\Easing\InCubic.hpp" />
+    <ClInclude Include="Bell\Easing\InSine.hpp" />
+    <ClInclude Include="Bell\Easing\Step.hpp" />
+    <ClInclude Include="Libs\gtest\gtest-death-test.h" />
+    <ClInclude Include="Libs\gtest\gtest-message.h" />
+    <ClInclude Include="Libs\gtest\gtest-param-test.h" />
+    <ClInclude Include="Libs\gtest\gtest-printers.h" />
+    <ClInclude Include="Libs\gtest\gtest-spi.h" />
+    <ClInclude Include="Libs\gtest\gtest-test-part.h" />
+    <ClInclude Include="Libs\gtest\gtest-typed-test.h" />
+    <ClInclude Include="Libs\gtest\gtest.h" />
+    <ClInclude Include="Libs\gtest\gtest_pred_impl.h" />
+    <ClInclude Include="Libs\gtest\gtest_prod.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-death-test-internal.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-filepath.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-internal.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-linked_ptr.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-param-util-generated.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-param-util.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-port.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-string.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-tuple.h" />
+    <ClInclude Include="Libs\gtest\internal\gtest-type-util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libs\gtest\gtest-param-test.h.pump" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_InCubic.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_InOutCubic.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_InOutQuadric.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_InQuadric.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_Linear.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_OutCubic.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_OutQuadric.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

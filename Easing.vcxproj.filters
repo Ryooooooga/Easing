@@ -1,17 +1,156 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
+    <Filter Include="Libs">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="リソース ファイル">
+    <Filter Include="Test">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Libs\gtest">
+      <UniqueIdentifier>{947699bd-bd94-4302-982a-17b2d35b8206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\gtest\internal">
+      <UniqueIdentifier>{f314fade-6c33-4ab8-bcf2-b9ad416688ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bell">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Bell\Easing">
+      <UniqueIdentifier>{bf8a2db6-2de0-4164-b446-5f5ce3e4099d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\Bell">
+      <UniqueIdentifier>{a84bd219-edd4-43a7-9f9a-480e8c4e8d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\Bell\Easing">
+      <UniqueIdentifier>{4a77b53b-9150-414f-abf8-6a9030dbbe4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Libs\gtest\internal\gtest-death-test-internal.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-filepath.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-internal.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-linked_ptr.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-param-util-generated.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-param-util.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-port.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-string.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-tuple.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\internal\gtest-type-util.h">
+      <Filter>Libs\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest_prod.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest-death-test.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest-message.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest-param-test.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest-printers.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest-spi.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest-test-part.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest-typed-test.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\gtest\gtest_pred_impl.h">
+      <Filter>Libs\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\Easing.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\Linear.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\Step.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InQuadratic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InCubic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutQuadratic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutCubic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutQuadratic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutCubic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InSine.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InQuartic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libs\gtest\gtest-param-test.h.pump">
+      <Filter>Libs\gtest</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_Linear.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_InQuadric.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_InCubic.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_OutCubic.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_OutQuadric.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_InOutQuadric.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_InOutCubic.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
