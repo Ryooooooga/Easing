@@ -11,7 +11,6 @@
 
 #include <cmath>
 #include <type_traits>
-#include "../Math/Constants.hpp"
 
 namespace Bell::Easing {
 
