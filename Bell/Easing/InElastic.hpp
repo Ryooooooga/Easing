@@ -35,7 +35,7 @@ namespace Bell::Easing {
 		{
 			return
 				t <= FloatType(0) ? FloatType(0) :
-				t >= FloatType(1) ? FloatType(1) : -a_ * std::exp2(10*t) * std::sin((t - s_) * 2*Math::pi<FloatType> / p_);
+				t >= FloatType(1) ? FloatType(1) : -a_ * std::exp2(10*(t - 1)) * std::sin((t - 1 - s_) * 2*Math::pi<FloatType> / p_);
 		}
 	};
 

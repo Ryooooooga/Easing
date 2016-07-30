@@ -35,7 +35,7 @@ namespace Bell::Easing {
 				t < FloatType(0.0) ? FloatType(0) :
 				t > FloatType(1.0) ? FloatType(1) :
 				t < FloatType(0.5) ? in_(t*2)/2 :
-				(FloatType(2) - in_(1 - t*2))/2;
+				(FloatType(2) - in_((1-t)*2))/2;
 		}
 	};
 
