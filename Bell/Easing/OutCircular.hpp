@@ -24,7 +24,7 @@ namespace Bell::Easing {
 	public:
 		using value_type = FloatType;
 
-		constexpr FloatType operator()(FloatType t) const noexcept
+		FloatType operator()(FloatType t) const noexcept
 		{
 			return FloatType(1) - InCircular<FloatType>()(FloatType(1) - t);
 		}
