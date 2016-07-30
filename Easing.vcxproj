@@ -148,6 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bell\Easing.hpp" />
     <ClInclude Include="Bell\Easing\Easing.hpp" />
     <ClInclude Include="Bell\Easing\InBack.hpp" />
     <ClInclude Include="Bell\Easing\InBounce.hpp" />

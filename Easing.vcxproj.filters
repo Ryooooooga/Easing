@@ -204,6 +204,9 @@
     <ClInclude Include="Bell\Easing\OutBounce.hpp">
       <Filter>Bell\Easing</Filter>
     </ClInclude>
+    <ClInclude Include="Bell\Easing.hpp">
+      <Filter>Bell</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Libs\gtest\gtest-param-test.h.pump">
