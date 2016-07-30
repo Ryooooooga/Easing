@@ -168,6 +168,42 @@
     <ClInclude Include="Bell\Easing\InExponential.hpp">
       <Filter>Bell\Easing</Filter>
     </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutBack.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutElastic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutQuintic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InQuintic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutBack.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutElastic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutQuintic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InBack.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InElastic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InBounce.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutBounce.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutBounce.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Libs\gtest\gtest-param-test.h.pump">

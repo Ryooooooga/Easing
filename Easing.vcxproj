@@ -149,24 +149,36 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bell\Easing\Easing.hpp" />
+    <ClInclude Include="Bell\Easing\InBack.hpp" />
+    <ClInclude Include="Bell\Easing\InBounce.hpp" />
     <ClInclude Include="Bell\Easing\InCircular.hpp" />
+    <ClInclude Include="Bell\Easing\InElastic.hpp" />
     <ClInclude Include="Bell\Easing\InExponential.hpp" />
+    <ClInclude Include="Bell\Easing\InOutBack.hpp" />
+    <ClInclude Include="Bell\Easing\InOutBounce.hpp" />
     <ClInclude Include="Bell\Easing\InOutCircular.hpp" />
     <ClInclude Include="Bell\Easing\InOutCubic.hpp" />
+    <ClInclude Include="Bell\Easing\InOutElastic.hpp" />
     <ClInclude Include="Bell\Easing\InOutExponential.hpp" />
     <ClInclude Include="Bell\Easing\InOutQuadratic.hpp" />
     <ClInclude Include="Bell\Easing\InOutQuartic.hpp" />
+    <ClInclude Include="Bell\Easing\InOutQuintic.hpp" />
     <ClInclude Include="Bell\Easing\InOutSine.hpp" />
+    <ClInclude Include="Bell\Easing\InQuintic.hpp" />
     <ClInclude Include="Bell\Easing\Linear.hpp" />
     <ClInclude Include="Bell\Easing\InQuadratic.hpp" />
+    <ClInclude Include="Bell\Easing\OutBack.hpp" />
+    <ClInclude Include="Bell\Easing\OutBounce.hpp" />
     <ClInclude Include="Bell\Easing\OutCircular.hpp" />
     <ClInclude Include="Bell\Easing\OutCubic.hpp" />
+    <ClInclude Include="Bell\Easing\OutElastic.hpp" />
     <ClInclude Include="Bell\Easing\OutExponential.hpp" />
     <ClInclude Include="Bell\Easing\OutQuadratic.hpp" />
     <ClInclude Include="Bell\Easing\InQuartic.hpp" />
     <ClInclude Include="Bell\Easing\InCubic.hpp" />
     <ClInclude Include="Bell\Easing\InSine.hpp" />
     <ClInclude Include="Bell\Easing\OutQuartic.hpp" />
+    <ClInclude Include="Bell\Easing\OutQuintic.hpp" />
     <ClInclude Include="Bell\Easing\OutSine.hpp" />
     <ClInclude Include="Bell\Easing\Step.hpp" />
     <ClInclude Include="Bell\Math\Constants.hpp" />

@@ -9,33 +9,33 @@
 
 #pragma once
 
-#include "InBack.hpp"
+#include <cmath>
+#include <algorithm>
+#include "../Math/Constants.hpp"
 
 namespace Bell::Easing {
 
 	/**
-	 * @brief      ease in out back
+	 * @brief      ease in elastic
 	 */
 	template <typename FloatType>
-	class InOutBack
+	class InElastic
 	{
 		static_assert(std::is_floating_point<FloatType>::value, "");
 
-		InBack<FloatType> in_;
-
+		FloatType a_, p_, s_;
+		
 	public:
 		using value_type = FloatType;
 
-		constexpr InOutBack(FloatType s = FloatType(1.70158)) noexcept
-			: in_(s) {}
+		InElastic(FloatType a = FloatType(1.0), FloatType p = FloatType(0.3)) noexcept
+			: a_((std::max)(a, FloatType(1.0))), p_(p), s_(p_ / Math::pi<FloatType> / 2 * std::asin(1 / a_)) {}
 
-		constexpr FloatType operator()(FloatType t) const noexcept
+		FloatType operator()(FloatType t) const noexcept
 		{
 			return
-				t < FloatType(0.0) ? FloatType(0) :
-				t > FloatType(1.0) ? FloatType(1) :
-				t < FloatType(0.5) ? in_(t*2)/2 :
-				(FloatType(2) - in_(1 - t*2))/2;
+				t <= FloatType(0) ? FloatType(0) :
+				t >= FloatType(1) ? FloatType(1) : -a_ * std::exp2(10*t) * std::sin((t - s_) * 2*Math::pi<FloatType> / p_);
 		}
 	};
 
