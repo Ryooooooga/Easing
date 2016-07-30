@@ -17,9 +17,11 @@ namespace Bell::Easing {
 	 * @brief      ease in quad
 	 */
 	template <typename FloatType>
-	struct InQuadratic
+	class InQuadratic
 	{
 		static_assert(std::is_floating_point<FloatType>::value, "");
+
+	public:
 		using value_type = FloatType;
 
 		constexpr FloatType operator()(FloatType t) const noexcept

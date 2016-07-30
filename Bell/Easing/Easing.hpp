@@ -9,4 +9,17 @@
 
 #pragma once
 
-
+#include "Linear.hpp"
+#include "Step.hpp"
+#include "InQuadratic.hpp"
+#include "OutQuadratic.hpp"
+#include "InOutQuadratic.hpp"
+#include "InCubic.hpp"
+#include "OutCubic.hpp"
+#include "InOutCubic.hpp"
+#include "InQuartic.hpp"
+#include "OutQuartic.hpp"
+#include "InOutQuartic.hpp"
+#include "InSine.hpp"
+#include "OutSine.hpp"
+#include "InOutSine.hpp"

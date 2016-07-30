@@ -7,27 +7,16 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 //=====================================================================
 
-#pragma once
-
-#include "InQuadratic.hpp"
+#include "../../../Bell/Easing/Step.hpp"
 
 namespace Bell::Easing {
 
-	/**
-	 * @brief      ease out quad
-	 */
-	template <typename FloatType>
-	class OutQuadratic
-	{
-		static_assert(std::is_floating_point<FloatType>::value, "");
-
-	public:
-		using value_type = FloatType;
-
-		constexpr FloatType operator()(FloatType t) const noexcept
-		{
-			return FloatType(1) - InQuadratic<FloatType>()(FloatType(1) - t);
-		}
-	};
+	static_assert(Step<double>(0.5)(-1./4) == 0., "");
+	static_assert(Step<double>(0.5)( 0./4) == 0., "");
+	static_assert(Step<double>(0.5)( 1./4) == 0., "");
+	static_assert(Step<double>(0.5)( 2./4) == 1., "");
+	static_assert(Step<double>(0.5)( 3./4) == 1., "");
+	static_assert(Step<double>(0.5)( 4./4) == 1., "");
+	static_assert(Step<double>(0.5)( 5./4) == 1., "");
 
 }	//	namespace Bell::Easing

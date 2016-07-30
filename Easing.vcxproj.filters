@@ -28,6 +28,9 @@
     <Filter Include="Test\Bell\Easing">
       <UniqueIdentifier>{4a77b53b-9150-414f-abf8-6a9030dbbe4c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Bell\Math">
+      <UniqueIdentifier>{663b83ad-c1fe-4f55-bb4c-01d618e94ded}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Libs\gtest\internal\gtest-death-test-internal.h">
@@ -123,6 +126,30 @@
     <ClInclude Include="Bell\Easing\InQuartic.hpp">
       <Filter>Bell\Easing</Filter>
     </ClInclude>
+    <ClInclude Include="Bell\Easing\OutQuartic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Math\Constants.hpp">
+      <Filter>Bell\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Math\IsNaN.hpp">
+      <Filter>Bell\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Math\Math.hpp">
+      <Filter>Bell\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Math\Sign.hpp">
+      <Filter>Bell\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutSine.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutSine.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutQuartic.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Libs\gtest\gtest-param-test.h.pump">
@@ -150,6 +177,12 @@
       <Filter>Test\Bell\Easing</Filter>
     </ClCompile>
     <ClCompile Include="Test\Bell\Easing\Test_InOutCubic.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_Step.cpp">
+      <Filter>Test\Bell\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Easing\Test_OutQuartic.cpp">
       <Filter>Test\Bell\Easing</Filter>
     </ClCompile>
   </ItemGroup>

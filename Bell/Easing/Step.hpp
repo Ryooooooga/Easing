@@ -9,24 +9,30 @@
 
 #pragma once
 
-#include "InQuadratic.hpp"
+#include <cassert>
+#include <type_traits>
 
 namespace Bell::Easing {
 
 	/**
-	 * @brief      ease out quad
+	 * @brief      ease step
 	 */
 	template <typename FloatType>
-	class OutQuadratic
+	class Step
 	{
 		static_assert(std::is_floating_point<FloatType>::value, "");
+
+		FloatType a_;
 
 	public:
 		using value_type = FloatType;
 
+		constexpr Step(FloatType a) noexcept
+			: a_((assert(0 <= a && a <= 1), a)) {}
+
 		constexpr FloatType operator()(FloatType t) const noexcept
 		{
-			return FloatType(1) - InQuadratic<FloatType>()(FloatType(1) - t);
+			return t < a_ ? FloatType(0) : FloatType(1);
 		}
 	};
 

@@ -17,9 +17,11 @@ namespace Bell::Easing {
 	 * @brief      ease out cubic
 	 */
 	template <typename FloatType>
-	struct OutCubic
+	class OutCubic
 	{
 		static_assert(std::is_floating_point<FloatType>::value, "");
+
+	public:
 		using value_type = FloatType;
 
 		constexpr FloatType operator()(FloatType t) const noexcept

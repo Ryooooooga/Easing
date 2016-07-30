@@ -1,5 +1,5 @@
-﻿//=====================================================================
-// Copyright (c) 2016 Ryooooooga.
+//=====================================================================
+// Copyright (c) 2015-2016 Ryooooooga.
 // https://github.com/Ryooooooga
 //
 // Distributed under the Boost Software License, Version 1.0.
@@ -7,5 +7,9 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 //=====================================================================
 
-#include "Bell/Easing/Easing.hpp"
-int main(){}
+#pragma once
+
+#include <cmath>
+#include "Constants.hpp"
+#include "IsNaN.hpp"
+#include "Sign.hpp"

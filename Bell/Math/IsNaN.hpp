@@ -1,5 +1,5 @@
 //=====================================================================
-// Copyright (c) 2016 Ryooooooga.
+// Copyright (c) 2015-2016 Ryooooooga.
 // https://github.com/Ryooooooga
 //
 // Distributed under the Boost Software License, Version 1.0.
@@ -9,25 +9,24 @@
 
 #pragma once
 
-#include "InQuadratic.hpp"
+#include <type_traits>
 
-namespace Bell::Easing {
+namespace Bell::Math {
 
 	/**
-	 * @brief      ease out quad
+	 * @brief      NaNか判別する
+	 *
+	 * @param[in]  x          NaNかどうか調べる浮動小数点数
+	 *
+	 * @tparam     FloatType  浮動小数点数型
+	 *
+	 * @return     xがNaNなら true NaNでないなら false
 	 */
 	template <typename FloatType>
-	class OutQuadratic
+	constexpr bool isNaN(FloatType x) noexcept
 	{
 		static_assert(std::is_floating_point<FloatType>::value, "");
+		return x != x;
+	}
 
-	public:
-		using value_type = FloatType;
-
-		constexpr FloatType operator()(FloatType t) const noexcept
-		{
-			return FloatType(1) - InQuadratic<FloatType>()(FloatType(1) - t);
-		}
-	};
-
-}	//	namespace Bell::Easing
+}	//	namespace Bell::Math

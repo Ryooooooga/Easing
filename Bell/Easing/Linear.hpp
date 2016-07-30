@@ -17,9 +17,11 @@ namespace Bell::Easing {
 	 * @brief      ease linear
 	 */
 	template <typename FloatType>
-	struct Linear
+	class Linear
 	{
 		static_assert(std::is_floating_point<FloatType>::value, "");
+
+	public:
 		using value_type = FloatType;
 
 		constexpr FloatType operator()(FloatType t) const noexcept

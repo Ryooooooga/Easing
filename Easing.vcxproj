@@ -151,6 +151,8 @@
     <ClInclude Include="Bell\Easing\Easing.hpp" />
     <ClInclude Include="Bell\Easing\InOutCubic.hpp" />
     <ClInclude Include="Bell\Easing\InOutQuadratic.hpp" />
+    <ClInclude Include="Bell\Easing\InOutQuartic.hpp" />
+    <ClInclude Include="Bell\Easing\InOutSine.hpp" />
     <ClInclude Include="Bell\Easing\Linear.hpp" />
     <ClInclude Include="Bell\Easing\InQuadratic.hpp" />
     <ClInclude Include="Bell\Easing\OutCubic.hpp" />
@@ -158,7 +160,13 @@
     <ClInclude Include="Bell\Easing\InQuartic.hpp" />
     <ClInclude Include="Bell\Easing\InCubic.hpp" />
     <ClInclude Include="Bell\Easing\InSine.hpp" />
+    <ClInclude Include="Bell\Easing\OutQuartic.hpp" />
+    <ClInclude Include="Bell\Easing\OutSine.hpp" />
     <ClInclude Include="Bell\Easing\Step.hpp" />
+    <ClInclude Include="Bell\Math\Constants.hpp" />
+    <ClInclude Include="Bell\Math\IsNaN.hpp" />
+    <ClInclude Include="Bell\Math\Math.hpp" />
+    <ClInclude Include="Bell\Math\Sign.hpp" />
     <ClInclude Include="Libs\gtest\gtest-death-test.h" />
     <ClInclude Include="Libs\gtest\gtest-message.h" />
     <ClInclude Include="Libs\gtest\gtest-param-test.h" />
@@ -192,6 +200,8 @@
     <ClCompile Include="Test\Bell\Easing\Test_Linear.cpp" />
     <ClCompile Include="Test\Bell\Easing\Test_OutCubic.cpp" />
     <ClCompile Include="Test\Bell\Easing\Test_OutQuadric.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_OutQuartic.cpp" />
+    <ClCompile Include="Test\Bell\Easing\Test_Step.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
