@@ -14,7 +14,7 @@
 namespace Bell::Easing {
 
 	/**
-	 * @brief      ease out quart
+	 * @brief      ease out sine
 	 */
 	template <typename FloatType>
 	class OutSine
