@@ -28,10 +28,10 @@ namespace Bell::Easing {
 		{
 			return
 				t < FloatType(0.0/2.75) ? FloatType(0) :
-				t < FloatType(1.0/2.75) ? FloatType(7.5625)*(t-0.00/2.75)*(t-0.00/2.75) :
-				t < FloatType(2.0/2.75) ? FloatType(7.5625)*(t-1.50/2.75)*(t-1.50/2.75) + FloatType(0.75) :
-				t < FloatType(2.5/2.75) ? FloatType(7.5625)*(t-2.25/2.75)*(t-2.25/2.75) + FloatType(0.9375) :
-				t > FloatType(1) ? 1 : FloatType(7.5625)*(t-2.625/2.75)*(t-2.625/2.75) + FloatType(0.984375);
+				t < FloatType(1.0/2.75) ? FloatType(7.5625)*(t-FloatType(0.00/2.75))*(t-FloatType(0.00/2.75)) :
+				t < FloatType(2.0/2.75) ? FloatType(7.5625)*(t-FloatType(1.50/2.75))*(t-FloatType(1.50/2.75)) + FloatType(0.75) :
+				t < FloatType(2.5/2.75) ? FloatType(7.5625)*(t-FloatType(2.25/2.75))*(t-FloatType(2.25/2.75)) + FloatType(0.9375) :
+				t > FloatType(1) ? 1 : FloatType(7.5625)*(t-FloatType(2.625/2.75))*(t-FloatType(2.625/2.75)) + FloatType(0.984375);
 		}
 	};
 
