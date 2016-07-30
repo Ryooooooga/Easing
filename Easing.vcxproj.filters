@@ -150,6 +150,24 @@
     <ClInclude Include="Bell\Easing\InOutQuartic.hpp">
       <Filter>Bell\Easing</Filter>
     </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutCircular.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InOutExponential.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutCircular.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\OutExponential.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InCircular.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Easing\InExponential.hpp">
+      <Filter>Bell\Easing</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Libs\gtest\gtest-param-test.h.pump">

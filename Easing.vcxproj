@@ -149,13 +149,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bell\Easing\Easing.hpp" />
+    <ClInclude Include="Bell\Easing\InCircular.hpp" />
+    <ClInclude Include="Bell\Easing\InExponential.hpp" />
+    <ClInclude Include="Bell\Easing\InOutCircular.hpp" />
     <ClInclude Include="Bell\Easing\InOutCubic.hpp" />
+    <ClInclude Include="Bell\Easing\InOutExponential.hpp" />
     <ClInclude Include="Bell\Easing\InOutQuadratic.hpp" />
     <ClInclude Include="Bell\Easing\InOutQuartic.hpp" />
     <ClInclude Include="Bell\Easing\InOutSine.hpp" />
     <ClInclude Include="Bell\Easing\Linear.hpp" />
     <ClInclude Include="Bell\Easing\InQuadratic.hpp" />
+    <ClInclude Include="Bell\Easing\OutCircular.hpp" />
     <ClInclude Include="Bell\Easing\OutCubic.hpp" />
+    <ClInclude Include="Bell\Easing\OutExponential.hpp" />
     <ClInclude Include="Bell\Easing\OutQuadratic.hpp" />
     <ClInclude Include="Bell\Easing\InQuartic.hpp" />
     <ClInclude Include="Bell\Easing\InCubic.hpp" />
